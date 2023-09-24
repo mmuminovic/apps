@@ -42,3 +42,16 @@ function islamskikvizios() {
     "_blank"
   );
 }
+
+function tedebburandroid() {
+  window.open(
+    "https://play.google.com/store/apps/details?id=com.tedebbur.app",
+    "_blank"
+  );
+}
+function tedebburios() {
+  window.open("https://apps.apple.com/us/app/tedebbur/id6454143774", "_blank");
+}
+function tedebburhuawei() {
+  window.open("https://appgallery.huawei.com/app/C108848987", "_blank");
+}
