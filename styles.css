@@ -1,93 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+:root {
+  --primary-color: #2563eb;
+  --background-color: #f8fafc;
+  --card-background: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --shadow-color: rgb(0 0 0 / 0.1);
+  --border-radius: 16px;
+}
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #abcabc;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  line-height: 1.5;
 }
 
 .wrapper {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-  padding: 48px 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .card {
-  width: 200px;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  margin: 16px;
-  padding: 8px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card-inner {
+  background: var(--card-background);
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px -1px var(--shadow-color),
+    0 2px 4px -2px var(--shadow-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover .card-inner {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px var(--shadow-color),
+    0 4px 6px -4px var(--shadow-color);
 }
 
 .image {
-  display: flex;
-  justify-content: center;
-  background-color: #ededed;
-  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border-radius: calc(var(--border-radius) - 4px);
+  overflow: hidden;
 }
 
-.image img {
-  height: 190px;
+.img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img {
+  transform: scale(1.05);
 }
 
 .details {
-  background-color: rgba(227, 255, 238, 0.072);
   text-align: center;
-  padding: 16px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
 }
 
-h2 {
-  font-size: 20px;
-  font-family: "Ubuntu", sans-serif;
-  border-bottom: 1px solid rgb(41, 51, 45);
-  padding-bottom: 16px;
-  color: rgb(41, 51, 45);
+.details h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-a,
-a:hover,
-a:visited,
-a:active {
+.details a {
+  color: var(--primary-color);
   text-decoration: none;
-  color: #009ff5;
+  transition: color 0.2s ease;
+}
+
+.details a:hover {
+  color: #1d4ed8;
 }
 
 .button-group {
   display: flex;
+  gap: 1rem;
   justify-content: center;
-  padding: 8px 0;
+  margin-top: 1rem;
 }
 
 .go-to-button {
-  margin: 0 4px;
+  background: none;
+  border: none;
   cursor: pointer;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.go-to-button:hover {
+  background-color: #f1f5f9;
 }
 
 .go-to-button img {
-  width: 50px;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }

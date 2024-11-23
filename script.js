@@ -55,3 +55,42 @@ function tedebburios() {
 function tedebburhuawei() {
   window.open("https://appgallery.huawei.com/app/C108848987", "_blank");
 }
+
+function esaradnikandroid() {
+  window.location.href =
+    "https://play.google.com/store/apps/details?id=com.esaradnik.app";
+}
+
+function esaradnikios() {
+  window.location.href =
+    "https://apps.apple.com/us/app/e-saradnik/id6737983903";
+}
+
+function troskovnikandroid() {
+  window.location.href =
+    "https://play.google.com/store/apps/details?id=com.troskovnik.app";
+}
+
+function troskovnikios() {
+  window.location.href =
+    "https://apps.apple.com/us/app/troškovnik/id6738608998";
+}
+
+function mzikrandroid() {
+  window.location.href =
+    "https://play.google.com/store/apps/details?id=com.jutarnji.zikr";
+}
+
+function mzikrios() {
+  window.location.href =
+    "https://apps.apple.com/hr/app/jutarnji-i-večernji-zikr/id6478811677";
+}
+
+function tefsirandroid() {
+  window.location.href =
+    "https://play.google.com/store/apps/details?id=com.tefsir.aidelkarni";
+}
+
+function tefsirios() {
+  window.location.href = "https://apps.apple.com/app/id6560105084";
+}
