@@ -94,3 +94,31 @@ function tefsirandroid() {
 function tefsirios() {
   window.location.href = "https://apps.apple.com/app/id6560105084";
 }
+
+function marabicandroid() {
+  window.open(
+    "https://play.google.com/store/apps/details?id=com.marabic.app",
+    "_blank"
+  );
+}
+
+function marabicios() {
+  window.open(
+    "https://apps.apple.com/rs/app/marabic/id6757914592",
+    "_blank"
+  );
+}
+
+function dhikrcounterandroid() {
+  window.open(
+    "https://play.google.com/store/apps/details?id=com.dhikrcounter.app",
+    "_blank"
+  );
+}
+
+function dhikrcounterios() {
+  window.open(
+    "https://apps.apple.com/gh/app/my-dhikr-counter/id6756245863",
+    "_blank"
+  );
+}

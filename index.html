@@ -4,268 +4,402 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Muhamed Muminović - Mobile & Web Developer crafting meaningful digital experiences." />
     <link rel="stylesheet" href="./styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <title>App Portfolio</title>
+    <title>Muhamed Muminović | Developer & Author</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2rem;
-          margin-bottom: 2rem;
-          padding: 1rem;
-        "
-      >
-        <img
-          src="./1730754073383.jpeg"
-          alt="Muhamed Muminovic"
-          style="
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          "
-        />
-        <div style="text-align: center; max-width: 500px; width: 100%">
-          <h1
-            style="
-              font-size: clamp(2rem, 5vw, 2.5rem);
-              margin-bottom: 0.5rem;
-              color: #333;
-            "
-          >
-            Muhamed Muminović
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-deco hero-deco--1">M</div>
+      <div class="hero-deco hero-deco--2">M</div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-label">Developer & Author</p>
+          <h1 class="hero-title">
+            Building apps
+            <span>that matter.</span>
           </h1>
-          <h2
-            style="
-              font-size: clamp(1.5rem, 5vw, 1.75rem);
-              margin-bottom: 0.5rem;
-              color: #555;
-            "
-          >
-            Developer & Author
-          </h2>
-          <p
-            style="
-              color: #777;
-              font-size: clamp(1rem, 3vw, 1.125rem);
-              line-height: 1.6;
-              padding: 0 1rem;
-            "
-          >
-            Hi, I'm Muhamed Muminović, a passionate mobile and web developer.
-            With 5+ years of experience in app development, I strive to make
-            apps that are useful and easy to use.
+          <p class="hero-description">
+            I craft mobile experiences that educate, inspire, and simplify daily life.
+            With 5+ years of experience, I focus on creating apps that are purposeful and intuitive.
           </p>
-          <div style="margin-top: 1rem">
-            <a
-              href="https://github.com/mmuminovic"
-              target="_blank"
-              style="
-                color: #007bff;
-                text-decoration: none;
-                margin-right: 1.5rem;
-                font-weight: 500;
-                display: inline-block;
-                margin-bottom: 0.5rem;
-              "
-              >GitHub</a
-            >
-            <a
-              href="https://www.linkedin.com/in/muhamed-muminovic"
-              target="_blank"
-              style="
-                color: #007bff;
-                text-decoration: none;
-                font-weight: 500;
-                display: inline-block;
-                margin-bottom: 0.5rem;
-              "
-              >LinkedIn</a
-            >
+          <div class="hero-links">
+            <a href="#apps" class="hero-link hero-link--primary">
+              View My Work
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+            <a href="https://github.com/mmuminovic" target="_blank" class="hero-link hero-link--secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <h1 class="main-title">My Applications</h1>
-      <div class="cards">
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img src="./mojasufara.png" alt="mSufara app" class="img" />
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="./1730754073383.jpeg" alt="Muhamed Muminović" />
             </div>
-            <div class="details">
-              <h2><a href="http://msufara.com">mSufara</a></h2>
-              <div class="button-group">
-                <button class="go-to-button" onclick="mojasufaraandroid()">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="mojasufaraios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
-                <button class="go-to-button" onclick="mojasufarahuawei()">
-                  <img src="./appgallery-icon.png" alt="app-gallery-store" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img src="./mojprvinamaz.png" alt="mNamaz app" class="img" />
-            </div>
-            <div class="details">
-              <h2><a href="http://mnamaz.com">mNamaz</a></h2>
-              <div class="button-group">
-                <button class="go-to-button" onclick="mojprvinamazandroid()">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="mojprvinamazios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
-                <button class="go-to-button" onclick="mojprvinamazhuawei()">
-                  <img src="./appgallery-icon.png" alt="app-gallery-store" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img
-                src="./islamskikviz.png"
-                alt="Islamski kviz app"
-                class="img"
-              />
-            </div>
-            <div class="details">
-              <h2
-                Islamski kviz -
-                <a href="https://pitajucene.com" target="_blank"
-                  >pitajucene.com</a
-                >
-              </h2>
-              <div class="button-group" onclick="islamskikvizandroid()">
-                <button class="go-to-button">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="islamskikvizios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img src="./tedebbur.webp" alt="Tedebbur app" class="img" />
-            </div>
-            <div class="details">
-              <h2>Tedebbur app</h2>
-              <div class="button-group">
-                <button class="go-to-button" onclick="tedebburandroid()">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="tedebburios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
-                <button class="go-to-button" onclick="tedebburhuawei()">
-                  <img src="./appgallery-icon.png" alt="app-gallery-store" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img src="./esaradnik.png" alt="E-Saradnik app" class="img" />
-            </div>
-            <div class="details">
-              <h2>E-Saradnik app</h2>
-              <div class="button-group">
-                <button class="go-to-button" onclick="esaradnikandroid()">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="esaradnikios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img src="./troskovnik.png" alt="Troškovnik app" class="img" />
-            </div>
-            <div class="details">
-              <h2>Troškovnik</h2>
-              <div class="button-group">
-                <button class="go-to-button" onclick="troskovnikandroid()">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="troskovnikios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img src="./mzikr.png" alt="mZikr app" class="img" />
-            </div>
-            <div class="details">
-              <h2>mZikr</h2>
-              <div class="button-group">
-                <button class="go-to-button" onclick="mzikrandroid()">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="mzikrios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="image">
-              <img
-                src="./tefsir.png"
-                alt="Tefsir Aid El-Karni app"
-                class="img"
-              />
-            </div>
-            <div class="details">
-              <h2>Tefsir Aid El-Karni</h2>
-              <div class="button-group">
-                <button class="go-to-button" onclick="tefsirandroid()">
-                  <img src="./google-play.png" alt="google-play" />
-                </button>
-                <button class="go-to-button" onclick="tefsirios()">
-                  <img src="./appstore-icon.png" alt="app-store" />
-                </button>
+            <div class="profile-info">
+              <h2 class="profile-name">Muhamed Muminović</h2>
+              <p class="profile-role">Mobile Developer · Bosnia</p>
+              <div class="profile-stats">
+                <div class="stat">
+                  <div class="stat-value">10+</div>
+                  <div class="stat-label">Apps</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">5+</div>
+                  <div class="stat-label">Years</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">100K+</div>
+                  <div class="stat-label">Users</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section class="apps-section" id="apps">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">My <span>Applications</span></h2>
+          <span class="section-count">10 Published Apps</span>
+        </header>
+
+        <div class="projects-grid">
+          <!-- mSufara -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./mojasufara.png" alt="mSufara" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">
+                  <a href="http://msufara.com" target="_blank">mSufara</a>
+                  <svg class="project-card__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                  </svg>
+                </h3>
+                <p class="project-card__description">Interactive app for learning Arabic alphabet and Quran reading basics with audio lessons.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Expo</span>
+              <span class="tech-badge">TypeScript</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="mojasufaraandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="mojasufaraios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+              <button class="store-link" onclick="mojasufarahuawei()">
+                <img src="./appgallery-icon.png" alt="AppGallery" />
+                <span>AppGallery</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- mNamaz -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./mojprvinamaz.png" alt="mNamaz" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">
+                  <a href="http://mnamaz.com" target="_blank">mNamaz</a>
+                  <svg class="project-card__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                  </svg>
+                </h3>
+                <p class="project-card__description">Step-by-step prayer guide with animations, audio, and progress tracking for beginners.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Expo</span>
+              <span class="tech-badge">Animations</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="mojprvinamazandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="mojprvinamazios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+              <button class="store-link" onclick="mojprvinamazhuawei()">
+                <img src="./appgallery-icon.png" alt="AppGallery" />
+                <span>AppGallery</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Tedebbur -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./tedebbur.webp" alt="Tedebbur" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">Tedebbur</h3>
+                <p class="project-card__description">Quran reflection app with daily verses, translations, and contemplation guides.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">i18n</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="tedebburandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="tedebburios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+              <button class="store-link" onclick="tedebburhuawei()">
+                <img src="./appgallery-icon.png" alt="AppGallery" />
+                <span>AppGallery</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Islamski kviz -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./islamskikviz.png" alt="Islamski kviz" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">
+                  <a href="https://pitajucene.com" target="_blank">Islamski kviz</a>
+                  <svg class="project-card__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                  </svg>
+                </h3>
+                <p class="project-card__description">Educational quiz game with thousands of questions about Islamic knowledge.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="islamskikvizandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="islamskikvizios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- mArabic -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./marabic.png" alt="mArabic" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">mArabic</h3>
+                <p class="project-card__description">Language learning app for mastering Arabic through interactive lessons and vocabulary building.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Expo</span>
+              <span class="tech-badge">Firebase</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="marabicandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="marabicios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- My Dhikr Counter -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./my-dhikr-counter.png" alt="My Dhikr Counter" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">My Dhikr Counter</h3>
+                <p class="project-card__description">Digital tasbeeh counter with customizable dhikr lists, progress tracking, and haptic feedback.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Expo</span>
+              <span class="tech-badge">Haptics</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="dhikrcounterandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="dhikrcounterios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- E-Saradnik -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./esaradnik.png" alt="E-Saradnik" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">E-Saradnik</h3>
+                <p class="project-card__description">Business collaboration platform for managing partners and tracking cooperations.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">SQLite</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="esaradnikandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="esaradnikios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Troškovnik -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./troskovnik.png" alt="Troškovnik" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">Troškovnik</h3>
+                <p class="project-card__description">Personal expense tracker with budgeting, categories, and monthly reports.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Charts</span>
+              <span class="tech-badge">AsyncStorage</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="troskovnikandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="troskovnikios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- mZikr -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./mzikr.png" alt="mZikr" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">mZikr</h3>
+                <p class="project-card__description">Morning and evening adhkar collection with audio, translations, and daily reminders.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Audio</span>
+              <span class="tech-badge">Notifications</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="mzikrandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="mzikrios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Tefsir Aid El-Karni -->
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <img src="./tefsir.png" alt="Tefsir Aid El-Karni" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title">Tefsir Aid El-Karni</h3>
+                <p class="project-card__description">Comprehensive Quran commentary by Sheikh Aid Al-Qarni with search and bookmarks.</p>
+              </div>
+            </div>
+            <div class="project-card__tech">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">SQLite</span>
+              <span class="tech-badge">Search</span>
+            </div>
+            <div class="project-card__stores">
+              <button class="store-link" onclick="tefsirandroid()">
+                <img src="./google-play.png" alt="Play Store" />
+                <span>Play Store</span>
+              </button>
+              <button class="store-link" onclick="tefsirios()">
+                <img src="./appstore-icon.png" alt="App Store" />
+                <span>App Store</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-logo">Muhamed Muminović</p>
+        <p class="footer-text">Building meaningful digital experiences since 2019</p>
+        <div class="footer-links">
+          <a href="https://github.com/mmuminovic" target="_blank" class="footer-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhamed-muminovic" target="_blank" class="footer-link">LinkedIn</a>
+          <a href="mailto:contact@muhamed.dev" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
   </body>
