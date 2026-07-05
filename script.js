@@ -1,3 +1,16 @@
+function mywoostoresandroid() {
+  window.open(
+    "https://play.google.com/store/apps/details?id=com.mywoostores.app",
+    "_blank"
+  );
+}
+function mywoostoresios() {
+  window.open(
+    "https://apps.apple.com/rs/app/my-woo-stores/id6767357806",
+    "_blank"
+  );
+}
+
 function mojasufaraandroid() {
   window.open(
     "https://play.google.com/store/apps/details?id=com.sufara.moja",
