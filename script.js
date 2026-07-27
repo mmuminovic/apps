@@ -144,8 +144,6 @@ function dhikrcounterios() {
 (function () {
   "use strict";
 
-  var STORAGE_KEY = "mm-open-drawers";
-  var DEFAULT_OPEN = [];
   var RING_LENGTH = 100.53; // 2πr for r=16
 
   var reducedMotion = window.matchMedia(
@@ -163,33 +161,6 @@ function dhikrcounterios() {
   var dockTop = document.getElementById("dock-top");
   var ring = document.getElementById("dock-ring");
   var progressBar = document.getElementById("scroll-progress");
-
-  /* ----- Persisted open/closed state ----- */
-  function readStored() {
-    try {
-      var raw = window.localStorage.getItem(STORAGE_KEY);
-      if (!raw) return null;
-      var parsed = JSON.parse(raw);
-      return Array.isArray(parsed) ? parsed : null;
-    } catch (error) {
-      return null;
-    }
-  }
-
-  function writeStored() {
-    try {
-      var open = drawers
-        .filter(function (drawer) {
-          return drawer.classList.contains("drawer--open");
-        })
-        .map(function (drawer) {
-          return drawer.id;
-        });
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(open));
-    } catch (error) {
-      /* private mode — state simply won't persist */
-    }
-  }
 
   function findDrawer(id) {
     for (var i = 0; i < drawers.length; i++) {
@@ -233,10 +204,7 @@ function dhikrcounterios() {
       });
     }
 
-    if (!settings.silent) {
-      syncDock();
-      writeStored();
-    }
+    if (!settings.silent) syncDock();
   }
 
   function toggleDrawer(drawer, options) {
@@ -275,7 +243,6 @@ function dhikrcounterios() {
         setDrawer(drawer, shouldOpen, { silent: true });
       });
       syncDock();
-      writeStored();
     });
   }
 
@@ -322,12 +289,9 @@ function dhikrcounterios() {
   window.addEventListener("scroll", requestScrollUpdate, { passive: true });
   window.addEventListener("resize", requestScrollUpdate);
 
-  /* ----- Initial state: stored → hash → default ----- */
-  var stored = readStored();
-  var initial = stored || DEFAULT_OPEN;
-
+  /* ----- Initial state: every drawer starts closed; only a #hash opens one ----- */
   drawers.forEach(function (drawer) {
-    setDrawer(drawer, initial.indexOf(drawer.id) > -1, { silent: true });
+    setDrawer(drawer, false, { silent: true });
   });
 
   var hashId = window.location.hash.replace("#", "");
