@@ -450,47 +450,4 @@ function dhikrcounterios() {
       );
     }
   });
-
-  /* ===== Contact form (opens the visitor's mail client) ===== */
-  var form = document.getElementById("contact-form");
-  var status = document.getElementById("form-status");
-  var EMAIL = "muminovic.muhamed01@gmail.com";
-
-  if (form && status) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      var name = (document.getElementById("name").value || "").trim();
-      var email = (document.getElementById("email").value || "").trim();
-      var message = (document.getElementById("message").value || "").trim();
-
-      var setStatus = function (text, variant) {
-        status.textContent = text;
-        status.className = "form-status form-status--" + variant;
-      };
-
-      if (!name || !email || !message) {
-        setStatus("Please fill in your name, email and message.", "error");
-        return;
-      }
-
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
-        setStatus("That email address doesn't look right.", "error");
-        return;
-      }
-
-      window.location.href =
-        "mailto:" +
-        EMAIL +
-        "?subject=" +
-        encodeURIComponent("Portfolio enquiry from " + name) +
-        "&body=" +
-        encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
-
-      setStatus(
-        "Opening your email app… If nothing happens, write to " + EMAIL + ".",
-        "success"
-      );
-    });
-  }
 })();
