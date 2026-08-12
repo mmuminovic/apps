@@ -1,0 +1,37 @@
+# Muhamed Muminović
+
+> Team Lead and Senior Software Engineer with 6+ years of experience building web, mobile
+> and real-time applications. Based in Novi Pazar, Serbia. Site: https://muhamedmuminovic.com/
+
+## Profile
+
+- Current role: Team Lead at WiLine Networks
+- Previous: Open Kinetix, Native Teams, Sprinting Software, Hygge Software
+- Education: MSc Information Technology, BSc Mathematics — University of Novi Pazar
+- Languages: Bosnian (native), Serbian (native), English (advanced), Arabic (basic)
+
+## Core stack
+
+TypeScript · React / Next.js · React Native · Node.js · Go · PostgreSQL · WebRTC
+
+Additional: JavaScript, Vue.js, Angular, Tailwind CSS, NestJS, Express, Java Spring Boot,
+REST / GraphQL, Expo, MongoDB, Redis, SQLite, Supabase, Firebase, LiveKit, SIP telephony,
+Git, CI/CD, Jest, TypeORM, Strapi CMS.
+
+## Open-source projects
+
+- AI StepNotch — human-in-the-loop driver for the Claude Code CLI (CLI + Electron viewer): https://github.com/mmuminovic/AI-StepNotch
+- AI Code Walkthrough — VS Code extension for understanding AI-generated code: https://marketplace.visualstudio.com/items?itemName=mmuminovic.ai-code-walkthrough
+- react-native-qibla-compass — NPM package for Qibla direction from device sensors: https://www.npmjs.com/package/react-native-qibla-compass
+
+## Published applications
+
+11 apps on the App Store, Google Play and Huawei AppGallery with 900K+ combined downloads,
+including My Woo Stores, mSufara, mNamaz, Tedebbur, Islamski kviz, mArabic, My Dhikr Counter,
+E-Saradnik, Troškovnik, mZikr and Tefsir Aid El-Karni.
+
+## Links
+
+- Website: https://muhamedmuminovic.com/
+- GitHub: https://github.com/mmuminovic
+- LinkedIn: https://www.linkedin.com/in/muhamed-muminovic
